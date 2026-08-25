@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "json-server server/db.json --host 0.0.0.0 --port $PORT"
+    "server": "json-server server/db.json --host 0.0.0.0 --port $PORT --static dist"
   },
   "devDependencies": {
     "json-server": "^0.17.4",
