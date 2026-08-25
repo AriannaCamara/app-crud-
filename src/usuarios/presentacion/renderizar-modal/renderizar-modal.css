@@ -1,0 +1,140 @@
+.modal-contenedor {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(31, 27, 46, 0.45);
+
+    z-index: 1000;
+}
+
+.modal-dialog {
+    width: 420px;
+    max-width: calc(100% - 40px);
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: 0 20px 50px rgba(79, 70, 229, 0.2);
+}
+
+.modal-dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-dialog span {
+    color: #4c1d95;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+
+.modal-dialog input[type="text"],
+.modal-dialog input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ddd6fe;
+    border-radius: 10px;
+
+    background: #faf9ff;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+.modal-dialog input[type="text"]:focus,
+.modal-dialog input[type="number"]:focus {
+    border-color: #8b5cf6;
+
+    background: white;
+
+    box-shadow: 0 0 0 3px #ede9fe;
+}
+
+.modal-dialog input::placeholder {
+    color: #9ca3af;
+}
+
+/* Checkbox */
+
+.modal-dialog form > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal-dialog input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+
+    accent-color: #6366f1;
+
+    cursor: pointer;
+}
+
+.modal-dialog label {
+    color: #4b5563;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+/* Guardar */
+
+.modal-dialog button[type="submit"] {
+    width: 100%;
+
+    margin-top: 6px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #6366f1;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.modal-dialog button[type="submit"]:hover {
+    background: #4f46e5;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 5px 12px rgba(99, 102, 241, 0.25);
+}
+
+.modal-dialog button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Ocultar modal */
+
+.esconder-modal {
+    display: none;
+}
